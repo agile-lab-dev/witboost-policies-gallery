@@ -1,21 +1,14 @@
+#SchemaDefinition: {
+  name: string
+  dataType: string
+  constraint?: string | null
+}
+
+#TablesDefinition: {
+  tableName: string
+  schema: [#SchemaDefinition, ...#SchemaDefinition]
+}
+
 specific: {
-  tables: [{
-    tableName: string
-    schema: [{
-      name: string
-      dataType: string
-      }, ...{
-      name: string
-      dataType: string
-      }]
-    }, ...{
-    tableName: string
-    schema: [{
-      name: string
-      dataType: string
-      }, ...{
-      name: string
-      dataType: string
-      }]
-    }]
+  tables: [#TablesDefinition, ...#TablesDefinition]
 }
