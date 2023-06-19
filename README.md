@@ -1,6 +1,6 @@
 # CuePolicies
 
-This repository contains the CUE polciies used in the sandbox/playground environments as a starting point.
+This repository contains the CUE policies used in the sandbox/playground environments as a starting point.
 
 ## Usage
 
