@@ -5,8 +5,10 @@ This repository contains the CUE policies used in the sandbox/playground environ
 ## Usage
 
 1. Clone the project locally to have all the governance policies available to you locally.
-2. Go to Witboost UI and open Governance > Registry.
-3. For each policy click on the "Create Policy" button located on the upper right corner of the policy list and follow the approriate steps depending on the policy type:
+2. Update the following:
+  - The bucket name for the MWAA policy (field is `bucketName`); use the proper one for the environment the policy will be used in
+3. Go to Witboost UI and open Governance > Registry.
+4. For each policy click on the "Create Policy" button located on the upper right corner of the policy list and follow the approriate steps depending on the policy type:
 - Global policy:
   1. Fill out the menu with "Name" and "Description" as General Policy, on the "Environment" drop down choose the environment, in this case it's `development`.
   2. Select "Resource Type" as `Data Product`, "Context" as `global`, "Trigger" as `Active`, "Timing" as `Deployment`, "Engine" as `Cue`, "Resource Preprocessing" as `Default`, "Severity" as `error`.
