@@ -12,5 +12,5 @@ specific:{
    dagName: string,
    destinationPath: "dags/",
    sourcePath: "source/",
-   bucketName: "aws-ia-mwaa-eu-west-1-621415221771"
+   bucketName: "s3bucket"
 }
