@@ -1,4 +1,4 @@
-name: string
+name!: string
 fullyQualifiedName?: null | string
 description: string
 kind: "workload"
@@ -9,6 +9,12 @@ dependsOn: [...string]
 tags: [...string]
 readsFrom: [...string]
 specific: {
-	dbtProjectName: string
+	dbtProjectName!: string
 	gitUrl: string
+	cloudStorage: {
+		storageProvider!: string
+		bucketURI!: string
+		region!: string
+		secretString!: string
+	}
 }
