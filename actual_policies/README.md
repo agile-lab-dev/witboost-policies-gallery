@@ -1,0 +1,10 @@
+## Available CUE Policies
+
+| Technology                                      | Component    | Template                                                                                            | Scope                 | Policy                                                   |
+|:------------------------------------------------|:-------------|:----------------------------------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------|
+| <img src="../images/dp.png" width="50">         | Data Product | [Data Product](https://github.com/agile-lab-dev/witboost-data-product-template)                     | NA                    | [Global Policy](./global_policy.cue)                     |
+| <img src="../images/airbyte.png" width="100">   | Workload     | [Airbyte Workload](https://github.com/agile-lab-dev/witboost-airbyte-workload-template)             | ELT - Airbyte         | [Airbyte Policy](./airbyte.cue)                          |
+| <img src="../images/airflow.png" width="100">   | Workload     | [Airflow Workload](https://github.com/agile-lab-dev/witboost-mwaa-workload-template)                | Scheduling - Airflow  | [Airflow Policy](./airflow.cue)                          |
+| <img src="../images/dbt.png" width="100">       | Workload     | [DBT Workload](https://github.com/agile-lab-dev/witboost-dbt-workload-template)                     | Data Processing - DBT | [DBT Policy](./dbt.cue)                                  |
+| <img src="../images/snowflake.png" width="100"> | Storage Area | [Snowflake Storage Area](https://github.com/agile-lab-dev/witboost-snowflake-storage-area-template) | DWH - Snowflake       | [Snowflake Storage Area Policy](./snowflake_storage.cue) |
+| <img src="../images/snowflake.png" width="100"> | Output Port  | [Snowflake Output Port](https://github.com/agile-lab-dev/witboost-snowflake-output-port-template)   | DWH - Snowflake       | [Snowflake Output Port Policy](./output_port.cue)        |
