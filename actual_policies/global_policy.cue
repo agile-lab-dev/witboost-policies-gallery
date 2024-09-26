@@ -39,9 +39,9 @@ import "strings"
 	dataTypeDisplay?:    string | null
 	description?:        string
 	fullyQualifiedName?: string | null
-	tags?:               [... #OM_Tag] | null
-	constraint?:         #OM_Constraint | null
-	ordinalPosition?:    number | null
+	tags?: [... #OM_Tag] | null
+	constraint?:      #OM_Constraint | null
+	ordinalPosition?: number | null
 	if dataType =~ "(?i)^(JSON)$" {
 		jsonSchema: string
 	}
@@ -82,17 +82,17 @@ import "strings"
 	version:                  #ComponentVersion & =~"^\(majorVersion)+\\..+$"
 	infrastructureTemplateId: string
 	useCaseTemplateId?:       string | null
-	dependsOn:                [...#ComponentId] | null
-	platform?:                string | null
-	technology?:              string | null
-	outputPortType:           string
-	creationDate?:            string | null
-	startDate?:               string | null
-	processDescription?:      string | null
-	dataContract:             #DataContract
-	dataSharingAgreement:     #DataSharingAgreement
+	dependsOn: [...#ComponentId] | null
+	platform?:            string | null
+	technology?:          string | null
+	outputPortType:       string
+	creationDate?:        string | null
+	startDate?:           string | null
+	processDescription?:  string | null
+	dataContract:         #DataContract
+	dataSharingAgreement: #DataSharingAgreement
 	tags: [... #OM_Tag]
-	sampleData?:      #OM_TableData
+	sampleData?: #OM_TableData
 	semanticLinking?: [...] | null
 	specific: {...}
 	...
@@ -184,7 +184,7 @@ email?:                      string | null
 informationSLA?:             string | null
 status?:                     string & =~"(?i)^(draft|published|retired)$" | null
 maturity?:                   string & =~"(?i)^(tactical|strategic)$" | null
-billing?:                    {...} | null
+billing?: {...} | null
 tags: [... #OM_Tag]
 specific: {...}
 components: [#Component, ...#Component]
