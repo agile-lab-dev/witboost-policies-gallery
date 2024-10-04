@@ -1,7 +1,6 @@
 import "list"
 
 components: [...{
-
 	kind:            string
 	technology:      string
 	outputPortType?: string | null
@@ -29,6 +28,7 @@ components: [...{
 #MeasureFields: {
 	name: #Name
 	measureTypeList: [... string & =~"(?i)^(MIN|MAX|SUM|COUNT|APPROX_COUNT_DISTINCT)$"]
+	...
 }
 
 #DimensionFields: {
@@ -130,6 +130,7 @@ components: [...{
 	destinationPath?: string | null
 	tableName?:       string | null
 	sqlStatement?:    string | null
+	...
 }
 
 #DremioStorage: {
@@ -138,6 +139,7 @@ components: [...{
 		tableName:         string
 		columnsDefinition: string
 	}]
+	...
 }
 
 #ConsumerView: {

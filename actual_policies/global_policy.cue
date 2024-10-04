@@ -25,6 +25,7 @@ import "strings"
 	labelType:    string & =~"(?i)^(Manual|Propagated|Automated|Derived)$"
 	state:        string & =~"(?i)^(Suggested|Confirmed)$"
 	href?:        string | null
+	...
 }
 
 #OM_Column: {
@@ -48,6 +49,7 @@ import "strings"
 	if dataType =~ "(?i)^(MAP|STRUCT|UNION)$" {
 		children: [... #OM_Column]
 	}
+	...
 }
 
 #DataContract: {
