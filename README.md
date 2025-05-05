@@ -8,7 +8,7 @@
 
 Designed by [Agile Lab](https://www.agilelab.it/), Witboost is a versatile platform that addresses a wide range of sophisticated data engineering challenges. It enables businesses to discover, enhance, and productize their data, fostering the creation of automated data platforms that adhere to the highest standards of data governance. Want to know more about Witboost? Check it out [here](https://www.witboost.com) or [contact us!](https://witboost.com/contact-us).
 
-# Witboost Template Gallery
+# Witboost Policies Gallery
 
 - [Overview](#overview)
 - [Usage](#usage)
